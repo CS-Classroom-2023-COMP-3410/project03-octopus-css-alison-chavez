@@ -4,6 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <title>The Fascinating World of Octopuses</title>
+
+    <!-- External CSS(colors, layout, spacing) -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal CSS(page-wide styles/body styles)-->
+    <style>
+        body {
+            margin: 0;  /* remove default browser margin so the header spans full width */
+            font-family: Arial, Helvetica, sans-serif;  /* font that's similar to the screenshot*/
+            background-color: #f4f4f4; /* for light gray background*/
+        }
+    </style>
 </head>
 
 <body>
@@ -25,7 +37,6 @@
 
         <!-- Amazing Facts -->
         <h3>Amazing Facts</h3>
-        <!-- Unordered list -->
         <ul>
             <li>They have three hearts.</li>
             <li>They can change color.</li>
@@ -39,9 +50,8 @@
             The <span class="important">mantle</span>, for example, helps in respiration and jet propulsion.
         </p>
 
-        <!-- Comparison with other Cephalopods -->
+        <!-- Comparison -->
         <h5>Comparison with Other Cephalopods</h5>
-        <!-- Ordered list -->
         <ol>
             <li>Squid</li>
             <li>Cuttlefish</li>
@@ -56,19 +66,17 @@
             <a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a>
         </p>
 
-        <!-- Fun Experiment: Octopus Quiz -->
+        <!-- Quiz Section -->
         <div id="quiz-section">
 
-            <!-- Image -->
-            <img src="octopus-image.png" alt="Image of an octopus" width="100">
+            <!-- Inline CSS for image border-->
+            <img src="octopus-image.png" alt="Image of an octopus" width="100" style="border: 2px solid purple; padding: 4px;">
 
             <h2>Octopus Quiz</h2>
             <form action="/submit-quiz" method="POST">
-                <!-- Question 1 -->
                 <label for="question1">How many hearts does an octopus have?</label>
                 <input type="text" id="question1" name="question1"><br>
 
-                <!-- Question 2 -->
                 <label for="question2">Can octopuses change color? (Yes/No)</label>
                 <input type="text" id="question2" name="question2"><br>
 
@@ -76,12 +84,12 @@
             </form>
         </div>
 
-    </div> <!-- End of main-content -->
+    </div>
 
     <!-- Table -->
     <div id="species-table">
         <h2>Common Octopus Species</h2>
-        <table border="1">
+        <table>
             <tr>
                 <th>Species</th>
                 <th>Location</th>
@@ -104,11 +112,9 @@
     <div id="footer">
         <p>
             &copy; 2023 The Fascinating World of Octopuses. All rights reserved.
-            <!-- HTML entities for special characters -->
             Fun Fact: The plural of "Octopus" can be both "Octopuses" &amp; "Octopi" &lt;3
         </p>
     </div>
 
 </body>
-
 </html>
