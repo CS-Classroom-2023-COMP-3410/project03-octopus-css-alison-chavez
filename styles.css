@@ -1,0 +1,94 @@
+#header {
+    background-color: #0077e6;  /* Bright blue background for header */ 
+    color: white;
+    text-align: center;
+    padding: 20px 10px; /* Top and bottom padding for spacing */
+}
+
+#header h1 {
+    margin: 0;  /* Remove default margin */
+    font-size: 36px;   /* Larger font size for main title */
+}
+
+#header p {
+    margin-top: 5px;    /* Small margin above subtitle */
+    font-style: italic;
+}
+
+#main-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* headings spacing */
+h2, h3, h4, h5, h6 {  /* Apply to all subheadings */
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+ul, ol {
+    margin-left: 25px;  /* Indent list */
+}
+
+/* mantle word */
+.important {
+    color: red;
+    font-weight: bold;
+}
+
+/* links */
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+#quiz-section {
+    background-color: #e8f8ff; 
+    border: 1px solid #cce7f5;  /* Thin border around quiz section */
+    padding: 15px;
+    margin-top: 20px;
+    position: relative; /* for positioning the image */
+}
+
+#quiz-section img {
+    position: absolute; /* position image in top-right corner */
+    right: 15px;
+    top: 15px;
+}
+
+input[type="text"] {
+    margin: 5px 0 10px 0;
+    padding: 4px;
+}
+
+input[type="submit"] {
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+#species-table {
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;  /* Remove space between borders */
+    width: 300px;
+}
+
+th {
+    background-color: #888;
+    color: white;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 6px;
+    text-align: left;
+}
+
+#footer {
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px;  /* Padding for spacing inside footer */
+    font-size: 14px;
+}
